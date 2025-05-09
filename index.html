@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypada UB</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <meta name="google-site-verification" content="1UF0493EZeK2AWck_oFl48o6PsT8t8GXbKUEQ0GGR9Q" />
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name='description' content='Cypada UB er en ungdomsbedrift basert i Norge. Vi tilbyr tjenester innen 3D-printing og fotografi til alle som ønsker å utforske kreativitet og innovasjon.'>.
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Bilde/Logo/1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Avviklingsmelding -->
+    <div style="background-color: #ffcccb; color: #000; text-align: center; padding: 15px; font-size: 18px; font-family: 'Inter', sans-serif; margin-top: 55px;">
+        <strong>Viktig melding:</strong> Cypada UB er nå avviklet. Vi takker alle våre kunder og støttespillere for deres støtte gjennom årene!
+    </div>
+
+    <div id="particles-js"></div>
+    <header>
+        <a href="/index.html" class="logo"><img src="/Bilde/Logo/1.png" alt="Logo">Cypada UB</a>
+
+        <ul class="navlist">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a href="/HTML/Tjenester.html">Tjenester</a></li>
+            <li><a href="/HTML/Omoss.html">Om oss</a></li>
+            <li><a href="/HTML/Album.html">Galleri</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <span class="btn disabled" style="cursor: not-allowed; background-color: #ccc; color: #666;">Avviklet</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="Container">
+        <div class="hero-content">
+            <h1>Vi tilbyr presis 3D-printing og fotografering</h1>
+            <p>Cypada UB var en ungdomsbedrift basert i Norge. Vi tilbyr tjenester innen 3D-printing og fotografi til alle som ønsker å utforske kreativitet og innovasjon. Uansett om du trenger unike 3D-design eller profesjonelle fotografitjenester, hjelper vi deg med å realisere dine ideer</p>
+            <div class="hero-buttons">
+                <a href="#mer-info" class="btn primary" onclick="scrollToSection(event, 'mer-info')">Finn ut mer</a>
+                <span class="service-btn disabled" style="cursor: not-allowed; background-color: #ccc; color: #666; width: 150px; height: 50px ; border-radius: 13px; margin-top: 30px; text-align: center;">Ikke tilgjengelig</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="mer-info" class="statistikk">
+        <div class="stat-container">
+            <div class="stat-box">
+                <h3>5+</h3>
+                <p>Fullførte prosjekter</p>
+            </div>
+            <div class="stat-box">
+                <h3>3+</h3>
+                <p>Fornøyde kunder</p>
+            </div>
+            <div class="stat-box">
+                <h3>24/7</h3>
+                <p>Kundeservice</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tjenester">
+        <h2 id="tjenester-overskrift">Våre Tjenester</h2>
+        <div class="tjeneste-liste">
+            <div class="tjeneste-kort">
+                <i class='bx bxs-camera'></i>
+                <h3>Fotografering</h3>
+                <p>Fotograferingstjenester for dine behov</p>
+                <ul class="tjeneste-detaljer">
+                    <li>Portrettfotografering</li>
+                    <li>Produktfotografering</li>
+                    <li>Arrangementsfotografering</li>
+                </ul>
+                <a href="/HTML/Tjenester.html#foto" class="les-mer">Les mer →</a>
+            </div>
+            <div class="tjeneste-kort">
+                <i class='bx bxs-cube-alt'></i>
+                <h3>3D printere</h3>
+                <p>Innovative 3D-utskriftstjenester for dine prosjekter</p>
+                <ul class="tjeneste-detaljer">
+                    <li>Prototyping</li>
+                    <li>Tilpassede modeller</li>
+                    <li>Reservedeler</li>
+                </ul>
+                <a href="/HTML/Tjenester.html#3d" class="les-mer">Les mer →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="prosess">
+        <h2>Slik jobber vi</h2>
+        <div class="prosess-steg">
+            <div class="steg">
+                <div class="steg-nummer">1</div>
+                <h3>Konsultasjon</h3>
+                <p>Vi diskuterer dine behov og ønsker</p>
+            </div>
+            <div class="steg">
+                <div class="steg-nummer">2</div>
+                <h3>Planlegging</h3>
+                <p>Vi lager en detaljert plan for prosjektet</p>
+            </div>
+            <div class="steg">
+                <div class="steg-nummer">3</div>
+                <h3>Utførelse</h3>
+                <p>Vi gjennomfører arbeidet med høy presisjon</p>
+            </div>
+            <div class="steg">
+                <div class="steg-nummer">4</div>
+                <h3>Levering</h3>
+                <p>Du mottar det ferdige resultatet</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="verdier">
+        <h2>Våre verdier</h2>
+        <div class="verdier-container">
+            <div class="verdi-kort">
+                <i class='bx bx-bulb'></i>
+                <h3>Innovasjon</h3>
+                <p>Vi tenker nytt og søker alltid de beste løsningene</p>
+            </div>
+            
+            <div class="verdi-kort">
+                <i class='bx bx-shield'></i>
+                <h3>Kvalitet</h3>
+                <p>Vi leverer alltid høy kvalitet i alt vi gjør</p>
+            </div>
+            
+            <div class="verdi-kort">
+                <i class='bx bx-group'></i>
+                <h3>Samarbeid</h3>
+                <p>Vi tror på tett samarbeid med våre kunder</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="kundeomtaler">
+        <h2>Hva våre kunder sier</h2>
+        <div class="omtaler-container">
+            <div class="omtale">
+                <div class="stjerner">★★★★★</div>
+                <p>"Fantastisk service og kvalitet på 3D-printingen!"</p>
+                <cite>- Anders Johansen</cite>
+            </div>
+            <div class="omtale">
+                <div class="stjerner">★★★★★</div>
+                <p>"Bildene fra fotosesjonen ble helt perfekte!"</p>
+                <cite>- Maria Olsen</cite>
+            </div>
+        </div>
+    </section>
+
+    <section class="youtube-section">
+        <h2>Se vår siste video</h2>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/COUZpo6RhOw"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!--<section class="social-media">
+        <h1 class="join-adventure">Join Our Adventure</h1>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Cypada-UB/61565979425908/?is_tour_dismissed" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/cypada_ub/?igsh=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com/@CypadaUB" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://x.com/CypadaUB" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.tiktok.com/@cypadaub?lang=en" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://bsky.app/profile/cypadaub.bsky.social" target="_blank"><img src="/Bilde/Icons/bluesky-icon.png" alt="" width="30px", height="30px"></a>
+        </div>
+    </section>
+    <br>
+     <section class="bilde-galleri">
+        <h2>Vårt Galleri</h2>
+        <div class="bilde-container"> 
+            <img src="/Bilde/Bilder til nettsiden/bilde1.jpg" alt="Beskrivelse av bilde 1">
+            <img src="/Bilde/Bilder til nettsiden/bilde2.jpg" alt="Beskrivelse av bilde 2">
+             Legg til flere bilder etter behov 
+        </div>
+        <div class="album-knapp">
+            <a href="/HTML/Album.html" class="btn">Se hele albumet</a>
+        </div>
+    </section> -->
+    <script src="/JavaScript/Alle sidene/klapp.js"></script>
+    <script src="/JavaScript/Hovedside/main.js"></script>
+    <script src="/JavaScript/Hovedside/particles-config.js"></script>
+    
+    <footer>
+        <p>&copy; 2025 Cypada UB. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>

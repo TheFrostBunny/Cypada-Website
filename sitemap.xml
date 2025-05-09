@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap>
+  <url>
+    <loc>https://cypada.netlify.app/</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://cypada.netlify.app/tjenester</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cypada.netlify.app/om-oss</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cypada.netlify.app/galleri</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cypada.netlify.app/start-her</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+</sitemap>

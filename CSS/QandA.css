@@ -1,0 +1,176 @@
+.qa-hero {
+    padding-top: 150px;
+    text-align: center;
+    background: #1A1D24;
+    color: #ffffff;
+}
+
+.qa-hero h1 {
+    color: #00C2FF;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.qa-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.qa-item {
+    background: #1A1D24;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.qa-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.qa-question h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.toggle-icon {
+    color: #00C2FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.qa-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: #cccccc;
+}
+
+.qa-item.active .qa-answer {
+    padding: 20px;
+    max-height: 500px;
+}
+
+.qa-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: #1A1D24;
+    backdrop-filter: blur(20px);
+    padding: 14px 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+header.navbar {
+    background: #2A2D34;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navlist a {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navlist a:hover, 
+.navlist a.active {
+    color: #00C2FF;
+    text-shadow: 0 0 10px #00C2FF;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00C2FF;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00C2FF;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 10001;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 14px 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        background: #1A1D24;
+        backdrop-filter: blur(20px);
+        padding: 90px 4%;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navlist.open {
+        top: 100%;
+    }
+} 

@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+body {
+    background: #1A1D24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+/* Denne har noe med navbaren å gjøre!!*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    background: #1A1D24;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 800;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.navlist {
+    display: flex;
+    align-items: center;
+    background: #1A1D24;
+}
+.navlist li {
+    position: relative;
+    padding: 0 35px;
+}
+.navlist li:not(:last-child)::after {
+    content: '/';
+    position: absolute;
+    right: 0;
+    color: #00C2FF;
+    opacity: 0.5;
+}
+.navlist a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.navlist a:hover {
+    text-shadow: 3px 3px 20px #066400, -2px 1px 30px #fff;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 35px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 10px;
+    margin-right: 12px;
+    transition: all 0.6s ease;
+}
+.btn:hover{
+    background: #f26222;
+    color: #fff;
+    box-shadow: 0 0 20px #62270e;
+    transform: scale(1.1);
+}
+#menu-icon{
+    font-size: 34px;
+    color: #fff;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Bestilling Skjema*/
+.Container{
+    height: 110vh;
+    width: 100%;
+    background: #1A1D24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+.Container h1{
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(32, 35, 41, 0.98);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00C2FF;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: rgba(26, 29, 36, 0.8);
+    border: 1px solid rgba(0, 194, 255, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #00C2FF;
+}
+select option {
+    background-color: #1A1D24;
+    color: #fff;
+}
+input[type="file"] {
+    width: 100%;
+    padding: 8px 0;
+}
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#selected-file-name {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+#remove-file {
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+}
+button[type="submit"] {
+    display: inline-block;
+    padding: 14px 35px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-right: 12px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background: #f26222;
+    color: #fff;
+    border-color: #f26222;
+    box-shadow: 0 0 20px #62270e;
+    transform: scale(1.1);
+}
+.email-order {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+.email-order a {
+    color: #007bff;
+    text-decoration: none;
+}
+.email-order a:hover {
+    text-decoration: underline;
+}
+
+
+/* Denne er den som er på bunnen av nettsiden vår*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(26,29,36);
+    margin-top: 50px;
+}
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* Dette Gjør at nettsiden blir riktig på pc og mobil*/
+@media(max-width:1300px){
+    header{
+        padding: 20px 4%;
+
+    }
+}
+@media(max-width:1050px){
+    .logo{
+        font-size: 25px;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: auto;
+    }
+    
+    .navlist a{
+        margin: 0 25px;
+    }
+    
+    .btn{
+        padding: 11px 23px;
+    }
+
+    .Container h1{
+        font-size: 3.2rem;
+
+    }
+}
+@media(max-width:940px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #1A1D24;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 180px;
+        transition: all .7s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 0;
+        margin: 0px 0px 50px 0px;
+        font-size: 1.7rem;
+    }
+
+    .navlist li::after {
+        display: none; /* Fjerner skråstreker på mobil */
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media(max-width:600px){
+    header {
+        padding: 15px 4%;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #1A1D24;
+        padding: 20px 0;
+        transition: all .45s ease;
+        text-align: center;
+    }
+
+    .navlist.open {
+        top: 100%;
+    }
+
+    .navlist li {
+        margin: 15px 0;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .Container {
+        height: auto;
+        padding: 20px 0;
+        margin-top: 80px;
+    }
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 12px;
+        font-size: 16px;
+    }
+    button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .Container h1 {
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:400px){
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+    button[type="submit"] {
+        padding: 14px 25px;
+        font-size: 16px;
+    }
+}

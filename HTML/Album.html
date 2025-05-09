@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypada UB | Album</title>
+    <link rel="icon" type="image/x-icon" href="/Bilde/Logo/1.png">
+    <link rel="stylesheet" href="/CSS/album.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="/Bilde/Logo/1.png">Cypada UB</a>
+
+        <ul class="navlist">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a href="/HTML/Tjenester.html">Tjenester</a></li>
+            <li><a href="/HTML/Omoss.html">Om oss</a></li>
+            <li><a href="/HTML/Album.html">Galleri</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <span class="btn disabled" style="cursor: not-allowed; background-color: #ccc; color: #666;">Avviklet</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <h1>Vårt Galleri</h1>
+            <p>Se høydepunktene fra våre arrangementer og prosjekter</p>
+        </section>
+
+        <section class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="/Bilde/Bilder til nettsiden/bilde1.jpg" alt="3D Print">
+                    <div class="gallery-overlay">
+                        <h3>3D Print</h3>
+                        <p>Våre første 3D-print prosjekter</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="/Bilde/Bilder til nettsiden/bilde4.jpg" alt="Ferdig Produkt">
+                    <div class="gallery-overlay">
+                        <h3>Ferdig Produkt</h3>
+                        <p>Eksempler på ferdige produkter</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="/Bilde/Bilder til nettsiden/bilde5.jpg" alt="Kundeprosjekt">
+                    <div class="gallery-overlay">
+                        <h3>Kundeprosjekt</h3>
+                        <p>Spesialbestillinger fra kunder</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="/Bilde/Bilder til nettsiden/bilde3.jpg" alt="Team Arbeid">
+                    <div class="gallery-overlay">
+                        <h3>Team Arbeid</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="/Bilde/Bilder til nettsiden/bilde6.jpg" alt="Team Arbeid">
+                    <div class="gallery-overlay">
+                        <h3>Prøve Prosjekt </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for forstørret bilde -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cypada UB. Alle rettigheter reservert.</p>
+    </footer>
+
+    <script src="/JavaScript/Alle sidene/klapp.js"></script>
+    <script src="/JavaScript/Album.js"></script>
+</body>
+</html>
